@@ -25,6 +25,7 @@
 - [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚠️ Disclaimer & Compliance](#️-disclaimer--compliance)
+- [💖 Support & Sponsorship](#-support--sponsorship-)
 - [📈 Star History](#-star-history)
 
 ---
@@ -100,6 +101,27 @@ Check out [Awesome Awesome Awesome](https://github.com/ishandutta2007/Awesome-Aw
 - 🛡️ **Community Curated**: This repository serves as a community research guide and does not constitute an endorsement.
 - 🔐 **CJIS & Legal Standards**: Digital evidence handling requires strict adherence to chain-of-custody rules, statutory retention schedules, and regional security standards (e.g., FBI CJIS Security Policy, ISO/IEC 27037).
 - ⚖️ **Commercial vs Open-Source**: Open-source tools provide crucial forensic analysis and storage layers, but production law-enforcement body-worn camera programs almost universally require certified commercial DEMS platforms for regulatory compliance.
+
+---
+
+## 💖 Support & Sponsorship ☕
+
+Thank you for exploring and utilizing **Awesome Digital Evidence Management**! 
+
+If you find this curated list helpful for your research, legal technology evaluation, or forensic investigations, please consider supporting the project:
+
+- ⭐ **Star** this repository to increase its visibility for public safety professionals and forensic examiners.
+- 🍴 **Fork** and share it with your team, lab colleagues, or agency partners.
+- ☕ **Buy Me a Coffee**: Support ongoing maintenance, research, and curation via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub" />
+  </a>
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
+  </a>
+</p>
 
 ---
 
