@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Shield Glow & Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+    </filter>
+  </defs>
+
+  <style>
+    .title {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 19px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #38bdf8;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    
+    /* Animations */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.08); }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      50% { transform: translateY(-15px) translateX(10px); opacity: 0.8; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100%); }
+    }
+    @keyframes nodePulse {
+      0%, 100% { r: 4; fill-opacity: 0.6; }
+      50% { r: 7; fill-opacity: 1; }
+    }
+
+    .bg-pulse {
+      animation: pulseGlow 6s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .particle-1 { animation: floatParticle 5s ease-in-out infinite; }
+    .particle-2 { animation: floatParticle 7s ease-in-out infinite 1s; }
+    .particle-3 { animation: floatParticle 6s ease-in-out infinite 2.5s; }
+    .node-anim-1 { animation: nodePulse 3s ease-in-out infinite; }
+    .node-anim-2 { animation: nodePulse 3s ease-in-out infinite 1.5s; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Background Grid Lines -->
+  <g stroke="#334155" stroke-width="0.6" opacity="0.4">
+    <path d="M 0 60 L 1200 60 M 0 120 L 1200 120 M 0 180 L 1200 180 M 0 240 L 1200 240 M 0 300 L 1200 300" />
+    <path d="M 150 0 L 150 360 M 300 0 L 300 360 M 450 0 L 450 360 M 600 0 L 600 360 M 750 0 L 750 360 M 900 0 L 900 360 M 1050 0 L 1050 360" />
+  </g>
+
+  <!-- Glowing Ambient Circles (Dynamic Background Effects) -->
+  <circle cx="1000" cy="100" r="180" fill="#6366f1" opacity="0.25" filter="url(#softGlow)" class="bg-pulse" />
+  <circle cx="150" cy="280" r="140" fill="#0284c7" opacity="0.2" filter="url(#softGlow)" class="bg-pulse" />
+
+  <!-- Animated Floating Data Nodes (Background) -->
+  <g class="particle-1">
+    <circle cx="950" cy="80" r="5" fill="#38bdf8" class="node-anim-1" />
+    <line x1="950" y1="80" x2="1040" y2="140" stroke="#38bdf8" stroke-width="1" opacity="0.4" stroke-dasharray="4 4" />
+  </g>
+  <g class="particle-2">
+    <circle cx="1040" cy="140" r="6" fill="#818cf8" class="node-anim-2" />
+    <line x1="1040" y1="140" x2="1110" y2="90" stroke="#818cf8" stroke-width="1" opacity="0.4" />
+  </g>
+  <g class="particle-3">
+    <circle cx="1110" cy="90" r="4" fill="#c084fc" class="node-anim-1" />
+    <circle cx="980" cy="230" r="5" fill="#34d399" class="node-anim-2" />
+    <line x1="1040" y1="140" x2="980" y2="230" stroke="#34d399" stroke-width="1" opacity="0.3" stroke-dasharray="3 3" />
+  </g>
+
+  <!-- Decorative Right Card (Security & Forensic Symbolics) -->
+  <rect x="880" y="50" width="270" height="260" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Right Card Graphic: Digital Evidence Shield & Chain of Custody -->
+  <g transform="translate(955, 90)">
+    <!-- Shield Outline -->
+    <path d="M 60 10 L 110 30 V 85 C 110 125 60 150 60 150 C 60 150 10 125 10 85 V 30 Z" fill="none" stroke="url(#accentGrad)" stroke-width="3.5" filter="url(#glow)"/>
+    <!-- Lock / Keyhole Icon -->
+    <rect x="44" y="65" width="32" height="26" rx="4" fill="#38bdf8" opacity="0.9"/>
+    <path d="M 50 65 V 55 C 50 48 54 44 60 44 C 66 44 70 48 70 55 V 65" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="60" cy="76" r="3" fill="#0f172a"/>
+  </g>
+
+  <!-- Tech Pills inside Right Graphic -->
+  <rect x="910" y="255" width="90" height="26" rx="13" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+  <text x="955" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#38bdf8">CHAIN-OF-CUSTODY</text>
+
+  <rect x="1010" y="255" width="120" height="26" rx="13" fill="#1e293b" stroke="#818cf8" stroke-width="1"/>
+  <text x="1070" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#818cf8">CJIS COMPLIANT</text>
+
+  <!-- MAIN FOREGROUND TEXT (Clear, Unobscured & Prominent) -->
+
+  <!-- Top Category Tag / Badge -->
+  <g transform="translate(60, 65)">
+    <rect x="0" y="0" width="280" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="15" cy="15" r="5" fill="#38bdf8" />
+    <text x="30" y="20" class="badge-text">LAW ENFORCEMENT &amp; FORENSICS</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="60" y="145" class="title">Awesome Digital Evidence</text>
+  <text x="60" y="198" class="title" fill="url(#accentGrad)">Management Systems</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="245" class="subtitle">Curated SaaS Platforms, Forensic Tools, BWC Video &amp; Open-Source Ecosystem</text>
+
+  <!-- Bottom Accent Bar -->
+  <rect x="60" y="280" width="760" height="4" rx="2" fill="url(#accentGrad)" />
+</svg>

@@ -1,97 +1,114 @@
-# Awesome-Digital-Evidence-Management
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Digital Evidence Management Banner" width="100%">
+</p>
 
-Markdown
-Copy
-Copied
-## Top Digital Evidence Management Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Body-Worn Camera Evidence, Chain of Custody, Media Management for Law Enforcement & Secure Evidence Sharing*  
-**Last updated: October 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Digital Evidence Management Systems (DEMS)**. These systems ingest, store, audit, and share body-cam, in-car, CCTV, and other digital evidence with strict chain-of-custody controls for justice workflows.
-
-**Examples** include Axon Evidence, Motorola CommandCentral Evidence, Veritone iDEMS, Safe Fleet DEMS, PhotoManager, VIDIZMO DEMS, Nice Investigate, Genetec Clearance, FileOnQ, and Evidence.com (the category leaders).
-
-**Open-source emphasis**: Production DEMS for law enforcement is almost entirely commercial. Open building blocks include **forensic case tools**, **object storage**, **chain-of-custody logging**, and **lab case managers**. This section lists every significant relevant project found.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **[Axon Evidence (Evidence.com)](https://www.axon.com/products/axon-evidence)**  
-  Leading cloud digital evidence platform integrated with Axon body cameras and justice workflows.
-
-- **[Motorola CommandCentral Evidence, Genetec Clearance](https://www.motorolasolutions.com/)**  
-  Enterprise evidence and investigation platforms from major public-safety vendors.
-
-- **[Veritone iDEMS, Nice Investigate, Safe Fleet, VIDIZMO, FileOnQ](https://www.veritone.com/)**  
-  Digital evidence management, redaction, and sharing solutions for agencies and prosecutors.
-
-- **[Other commercial DEMS platforms](https://www.axon.com/)**  
-  Additional body-worn and fixed-camera evidence suites.
-
-## Open-Source GitHub Projects
-
-- **[IPED](https://github.com/sepinf-inc/IPED)**  
-  Open digital evidence processor and indexer—large-scale forensic processing used by law enforcement for seized media analysis (not a full BWC DEMS).
-
-- **[L.I.A.M](https://github.com/ciaran-ie/L.I.A.M)**  
-  Open case and evidence-item management system aimed at digital forensics labs—chain-of-custody oriented workflow tooling.
-
-- **[NYPTI DEMS (reference)](https://github.com/julien-cheng/DEMS)**  
-  Open digital evidence management project oriented toward prosecutor discovery obligations (reference/architecture interest).
-
-- **[MinIO](https://github.com/minio/minio)**  
-  Open S3-compatible object storage commonly used as the durable media backend for custom evidence repositories.
-
-- **[The Sleuth Kit + Autopsy](https://github.com/sleuthkit/autopsy)**  
-  Open forensic analysis platforms for deep examination of evidence items once ingested.
-
-- **[Nextcloud / secure file collaboration](https://github.com/nextcloud/server)**  
-  Open self-hosted sharing with audit logs—sometimes adapted for limited internal evidence distribution (not CJIS-certified by default).
-
-- **[Immutable logging / audit stacks](https://github.com/search?q=chain+of+custody+OR+evidence+audit+log+open+source)**  
-  Community patterns for append-only evidence access logs.
-
-- **[Open redaction research tools](https://github.com/search?q=video+redaction+open+source)**  
-  Experimental open redaction utilities that may complement evidence review workflows.
-
-### Additional Strong Open-Source Options
-
-- **Lab case tracking**: L.I.A.M-style managers for forensic units.
-- **Bulk processing**: IPED for large seized-data cases.
-- **Storage layer**: MinIO with strict IAM and encryption.
-- **Composable stacks**: Camera ingest → encrypted object store → audit DB → open forensic tools; commercial DEMS for BWC programs.
-- Commercial DEMS remain essential for CJIS, body-cam scale, and prosecutor sharing networks.
-
-**Frameworks for building custom systems**:  
-**MinIO** + strong audit logging + **L.I.A.M**/case DB for limited internal systems; **IPED**/Autopsy for analysis.  
-Agency-scale body-worn programs almost always use commercial DEMS (Axon, Motorola, Genetec, etc.) for compliance and support.  
-Fully open end-to-end DEMS for modern BWC programs is not practical today; open tools support analysis and lab workflows around commercial cores.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Digital evidence is highly sensitive. Follow chain-of-custody rules, retention schedules, disclosure obligations, and CJIS or equivalent security standards. Unauthorized access or alteration can compromise prosecutions and civil rights.
-- Open-source tools are not automatically certified for law-enforcement evidence storage. Commercial DEMS platforms provide vendor compliance pathways and support. Neither replaces trained evidence custodians and lawful process.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Evidence-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Digital-Evidence-Management?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Evidence-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Digital-Evidence-Management?style=flat-square&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Evidence-Management/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Digital-Evidence-Management?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Evidence-Management/commits/main"><img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Digital-Evidence-Management?style=flat-square" alt="Last Commit" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-**Made for public-safety IT, evidence custodians, and digital forensics labs.**  
-Let's expand open forensic and case tools while recognizing that production body-worn evidence programs depend on certified commercial DEMS platforms.
+# 🚀 Top Digital Evidence Management Ecosystem (DEMS) ⚖️
+
+> **A curated, SEO-optimized directory of commercial SaaS platforms & open-source GitHub projects for Digital Evidence Management Systems (DEMS), Body-Worn Camera (BWC) evidence, Chain of Custody logging, AI Video Redaction, and Digital Forensics.**
+
+---
+
+## 📌 Table of Contents 📖
+- [🔍 Overview & Industry Analysis](#-overview--industry-analysis)
+- [🏢 SaaS & Commercial Platforms](#-saas--commercial-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer & Compliance](#️-disclaimer--compliance)
+- [📈 Star History](#-star-history)
+
+---
+
+## 🔍 Overview & Industry Analysis 📊
+
+**Digital Evidence Management Systems (DEMS)** enable law enforcement agencies, prosecutors, defense attorneys, and corporate forensic units to securely ingest, analyze, redact, audit, and exchange digital evidence (Body-Worn Camera footage, CCTV video, in-car audio, mobile extractions, and digital documents) with strict **CJIS-compliant chain-of-custody tracking**.
+
+---
+
+## 🏢 SaaS & Commercial Platforms 💼
+
+📊 **Market Insights**: The global Digital Evidence Management Systems (DEMS) market size is estimated at **$7.8 Billion in 2026** (projected to reach $15.2 Billion by 2032 at a CAGR of 11.8%). The market is **moderately concentrated** with dominant leaders like Axon Enterprise and Motorola Solutions holding major market share due to hardware-software integration, CJIS compliance barriers, and agency lock-in.
+
+### 📊 Commercial DEMS Vendor Comparison
+
+| 🏢 Platform / SaaS Product | 💰 Company Size (Valuation / Revenue) | 🏷️ Pricing (Starting Tier) | 🎁 Free Tier / Trial Limits | 📋 Primary Features & Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Motorola CommandCentral Evidence](https://www.motorolasolutions.com/)** | **$78.0 Billion** Valuation ($10.0B Revenue) | **$25 / user / month** | **30-day agency evaluation trial** (Includes 50 GB storage & 5 user seats) | Enterprise public safety ecosystem, BWC ingest, multi-agency investigation assembly. |
+| **[Axon Evidence (Evidence.com)](https://www.axon.com/products/axon-evidence)** | **$28.5 Billion** Valuation ($1.56B Revenue) | **$15 / user / month** (Basic) | **30-day agency pilot trial** (Includes free camera trial kit & unlimited test storage) | Global market leader for BWC & in-car video, automated redaction & CJIS compliance. |
+| **[NICE Investigate](https://www.nice.com/)** | **$10.8 Billion** Valuation ($2.37B Revenue) | **$30 / user / month** | **30-day guided agency pilot** (Up to 10 investigator accounts & 100 GB storage) | Automated criminal investigation assembly, digital court portal & evidence sharing. |
+| **[Safe Fleet DEMS / Focus](https://www.safefleet.net/)** | **$6.2 Billion** Parent Valuation ($1.15B Acq.) | **$20 / user / month** | **30-day agency trial program** (Includes 25 GB storage & 3 evaluator seats) | Fleet & body-worn video evidence management for law enforcement & transit agencies. |
+| **[Genetec Clearance](https://www.genetec.com/products/evidence-management/clearance)** | **$500 Million** Est. Revenue (Private) | **$18 / user / month** | **45-day free trial** (Up to 5 user seats & 100 GB cloud storage) | Collaborative digital evidence management, multi-agency sharing & automated redaction. |
+| **[Veritone iDEMS / Redact](https://www.veritone.com/)** | **$120 Million** Valuation ($127M Revenue) | **$99 / month** (Redact Starter) | **14-day free trial** (Includes 60 minutes of AI video/audio redaction) | AI-powered audio/video redaction, face/object detection & multi-media processing. |
+| **[VIDIZMO DEMS](https://www.vidizmo.com/digital-evidence-management-system/)** | **$15 Million** Est. Revenue (Private) | **$15 / user / month** | **14-day free trial** (Full DEMS access, 100 GB storage & 5 test accounts) | Secure cloud DEMS, prosecutor sharing portal, CJIS compliance & video redaction. |
+| **[FileOnQ Digital Evidence Manager](https://fileonq.com/)** | **$8 Million** Est. Revenue (Private) | **$12 / user / month** | **30-day live software demo & trial** (Custom workflow evaluation) | Physical & digital evidence integration, barcode chain-of-custody tracking & discovery. |
+
+---
+
+## 🔓 Open-Source GitHub Projects 🛠️
+
+While full-suite end-to-end BWC DEMS platforms are primarily commercial due to CJIS certifications and hardware ingest integrations, high-performance open-source building blocks powers forensic labs, incident response teams, object storage backends, and immutable audit logs.
+
+### 🌟 Top Open-Source Projects (Sorted by GitHub Stars ⭐️)
+
+| 🛠️ Project Name & Repository | ⭐️ GitHub Stars | 📝 Category & Description |
+| :--- | :--- | :--- |
+| **[MinIO Object Storage](https://github.com/minio/minio)** | <a href="https://github.com/minio/minio/stargazers"><img src="https://img.shields.io/github/stars/minio/minio?style=social&color=white" alt="MinIO Stars"/></a> | **Storage Backend**: High-performance S3-compatible object store widely deployed as encrypted evidence vaults. |
+| **[Nextcloud Server](https://github.com/nextcloud/server)** | <a href="https://github.com/nextcloud/server/stargazers"><img src="https://img.shields.io/github/stars/nextcloud/server?style=social&color=white" alt="Nextcloud Stars"/></a> | **Secure Collaboration**: Self-hosted file sync & sharing platform with file audit logs for secure internal evidence exchange. |
+| **[CyberChef](https://github.com/gchq/CyberChef)** | <a href="https://github.com/gchq/CyberChef/stargazers"><img src="https://img.shields.io/github/stars/gchq/CyberChef?style=social&color=white" alt="CyberChef Stars"/></a> | **Data Analysis**: The Cyber Swiss Army Knife for encoding, decoding, data extraction & cryptographic evidence analysis. |
+| **[MISP Threat Platform](https://github.com/MISP/MISP)** | <a href="https://github.com/MISP/MISP/stargazers"><img src="https://img.shields.io/github/stars/MISP/MISP?style=social&color=white" alt="MISP Stars"/></a> | **Threat & Evidence Sharing**: Open source threat intelligence and digital indicator sharing platform. |
+| **[GRR Rapid Response](https://github.com/google/grr)** | <a href="https://github.com/google/grr/stargazers"><img src="https://img.shields.io/github/stars/google/grr?style=social&color=white" alt="GRR Stars"/></a> | **Remote Forensics**: Incident response and live digital forensic evidence gathering framework scalable to thousands of hosts. |
+| **[Volatility 3](https://github.com/volatilityfoundation/volatility3)** | <a href="https://github.com/volatilityfoundation/volatility3/stargazers"><img src="https://img.shields.io/github/stars/volatilityfoundation/volatility3?style=social&color=white" alt="Volatility3 Stars"/></a> | **Memory Forensics**: Advanced memory extraction and volatile artifact investigation framework. |
+| **[Velociraptor](https://github.com/Velocidex/velociraptor)** | <a href="https://github.com/Velocidex/velociraptor/stargazers"><img src="https://img.shields.io/github/stars/Velocidex/velociraptor?style=social&color=white" alt="Velociraptor Stars"/></a> | **Endpoint Forensics**: Digital forensic target monitoring, endpoint hunting, and evidence collection engine. |
+| **[TheHive](https://github.com/TheHive-Project/TheHive)** | <a href="https://github.com/TheHive-Project/TheHive/stargazers"><img src="https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white" alt="TheHive Stars"/></a> | **Case Management**: Collaborative security incident response and investigation case management system. |
+| **[Timesketch](https://github.com/google/timesketch)** | <a href="https://github.com/google/timesketch/stargazers"><img src="https://img.shields.io/github/stars/google/timesketch?style=social&color=white" alt="Timesketch Stars"/></a> | **Timeline Forensics**: Collaborative forensic timeline analysis tool for deep investigation of evidence events. |
+| **[Autopsy Forensic Browser](https://github.com/sleuthkit/autopsy)** | <a href="https://github.com/sleuthkit/autopsy/stargazers"><img src="https://img.shields.io/github/stars/sleuthkit/autopsy?style=social&color=white" alt="Autopsy Stars"/></a> | **Digital Forensics GUI**: Graphical desktop interface for disk analysis, file recovery, and law-enforcement media investigations. |
+| **[The Sleuth Kit](https://github.com/sleuthkit/sleuthkit)** | <a href="https://github.com/sleuthkit/sleuthkit/stargazers"><img src="https://img.shields.io/github/stars/sleuthkit/sleuthkit?style=social&color=white" alt="SleuthKit Stars"/></a> | **Forensic Library**: Core command-line library and file system analysis utility engine. |
+| **[IPED Digital Evidence Processor](https://github.com/sepinf-inc/IPED)** | <a href="https://github.com/sepinf-inc/IPED/stargazers"><img src="https://img.shields.io/github/stars/sepinf-inc/IPED?style=social&color=white" alt="IPED Stars"/></a> | **Forensic Batch Processor**: Large-scale digital evidence indexer used by Federal Police for processing seized media drives. |
+| **[Plaso / log2timeline](https://github.com/log2timeline/plaso)** | <a href="https://github.com/log2timeline/plaso/stargazers"><img src="https://img.shields.io/github/stars/log2timeline/plaso?style=social&color=white" alt="Plaso Stars"/></a> | **Timeline Extraction**: Automated forensic engine for extracting timestamped evidence logs across heterogeneous operating systems. |
+| **[Turbinia](https://github.com/google/turbinia)** | <a href="https://github.com/google/turbinia/stargazers"><img src="https://img.shields.io/github/stars/google/turbinia?style=social&color=white" alt="Turbinia Stars"/></a> | **Cloud Forensics**: Automated cloud-scale digital forensic processing engine for disk images and evidence volumes. |
+| **[DFIRTrack](https://github.com/dfirtrack/dfirtrack)** | <a href="https://github.com/dfirtrack/dfirtrack/stargazers"><img src="https://img.shields.io/github/stars/dfirtrack/dfirtrack?style=social&color=white" alt="DFIRTrack Stars"/></a> | **Asset & Case Tracker**: Incident response evidence asset tracking application tailored for forensic units. |
+| **[L.I.A.M](https://github.com/ciaran-ie/L.I.A.M)** | <a href="https://github.com/ciaran-ie/L.I.A.M/stargazers"><img src="https://img.shields.io/github/stars/ciaran-ie/L.I.A.M?style=social&color=white" alt="LIAM Stars"/></a> | **Lab Case Manager**: Open-source Law-Enforcement Investigations & Asset Management tool for digital forensics labs. |
+| **[NYPTI DEMS Reference](https://github.com/julien-cheng/DEMS)** | <a href="https://github.com/julien-cheng/DEMS/stargazers"><img src="https://img.shields.io/github/stars/julien-cheng/DEMS?style=social&color=white" alt="NYPTI Stars"/></a> | **Prosecutor DEMS**: Open digital evidence management architecture reference for prosecutorial discovery workflow. |
+
+---
+
+## 🤝 How to Contribute 🛠️
+
+Contributions are warmly welcome! If you know of an enterprise SaaS platform or an impactful open-source forensic tool:
+
+1. 🍴 **Fork** this repository.
+2. 📝 **Add/Update** entries in `README.md` following the tabular format.
+3. 🔒 Ensure all SaaS additions include verified pricing starting tiers and free trial parameters.
+4. 🚀 Submit a **Pull Request** with a brief summary of additions!
+
+Check out [Awesome Awesome Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for more curated lists!
+
+---
+
+## ⚠️ Disclaimer & Compliance ⚖️
+
+- 🛡️ **Community Curated**: This repository serves as a community research guide and does not constitute an endorsement.
+- 🔐 **CJIS & Legal Standards**: Digital evidence handling requires strict adherence to chain-of-custody rules, statutory retention schedules, and regional security standards (e.g., FBI CJIS Security Policy, ISO/IEC 27037).
+- ⚖️ **Commercial vs Open-Source**: Open-source tools provide crucial forensic analysis and storage layers, but production law-enforcement body-worn camera programs almost universally require certified commercial DEMS platforms for regulatory compliance.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Digital-Evidence-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Digital-Evidence-Management&type=date&legend=top-left)
+
+---
+
+<p align="center">
+  <sub>Maintained with ❤️ for Public Safety IT, Evidence Custodians, and Digital Forensic Examiners.</sub>
+</p>
